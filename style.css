@@ -1,0 +1,1064 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.logo {
+  padding: 16px 20px 16px 10px;
+}
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* NAVIAGTION LIST */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the nav list horizontally */
+  width: 100%;
+  height: 54px;
+  padding: 0px 71px;
+  margin: auto;
+}
+
+/* CONTAIN LIST OF LEFT SIDE  */
+
+.navlist-1 {
+  display: flex;
+  align-items: center;
+}
+.navlist-1 ul {
+  list-style: none;
+  color: #262626;
+  font-weight: 350;
+  font-size: 13px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  display: flex;
+  align-items: center;
+  width: 832px;
+}
+.navlist-1 li {
+  margin: 1px 0px 0px;
+  padding: 10px;
+}
+.nav-list li:hover {
+  border-bottom: 2px solid brown;
+  padding: 10px;
+}
+
+/* CONTAIN  LIST OF RIGHT SIDE */
+
+.navlist-2 {
+  margin-left: 5px;
+}
+.navlist-2 ul {
+  color: #262626;
+  font-weight: 350;
+  font-size: 13px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 313px;
+}
+.navlist-2 li {
+  padding: 10px;
+}
+
+/* CONTAIN USER ICON */
+.signin {
+  padding: 8px;
+}
+.signin:hover {
+  border-radius: 10px;
+  text-align: center;
+  background-color: #dceded;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* CONTAIN THE SLIDES  */
+
+.mySlides {
+  display: none;
+}
+
+/* SLIDE SHOW CONTANIER */
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  height: 445px;
+}
+
+/* CAPTION OF SLIDES */
+
+.text-1 {
+  padding: 50px;
+  text-align: left;
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  background-color: white;
+  top: 50px;
+  left: 70px;
+  height: 332px;
+  width: 536px;
+}
+
+.text-1 button:hover {
+  background-color: #1a5888;
+}
+.text-2 button:hover {
+  background-color: #1a5888;
+}
+.herocaption-1 {
+  background-color: #ffb900;
+  font-size: 16px;
+  padding: 6px 12px;
+  width: 56px;
+  margin-bottom: 8px;
+  height: 28px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.herocaption-2 {
+  margin: 0px 0px 20px;
+  font-size: 37px;
+  height: 44px;
+  width: 438px;
+  font-weight: 450;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.herocaption-3 {
+  line-height: 22px;
+  height: 72px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.herocaption-4 {
+  height: 48px;
+  width: 110px;
+  background-color: rgb(126, 126, 193);
+  border: none;
+  color: white;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CONTAIN TEXT OF 2ND SLIDE */
+
+.text-2 {
+  padding: 40px;
+  text-align: left;
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  height: 332px;
+  width: 536px;
+  text-align: left;
+}
+.herocaption-5 {
+  line-height: 22px;
+  height: 72px;
+  margin-bottom: -1px;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+.herocaption-6 {
+  cursor: pointer;
+  height: 48px;
+  width: 110px;
+  background-color: rgb(126, 126, 193);
+  border: none;
+  color: white;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+}
+
+/* The dots/bullets/indicators */
+.arrows {
+  position: relative;
+  top: 10px;
+}
+.dot {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 5;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* CONTAIN ICONS */
+
+.icons {
+  position: absolute;
+  left: 70px;
+  top: 602px;
+  width: 1282px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-bottom: 1rem;
+}
+.icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 8px;
+}
+
+.icons p {
+  color: #0067b8;
+  text-decoration: underline;
+  text-decoration-color: #0067b8;
+  font-size: 15.5px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 470;
+}
+
+/* back to top button */
+.back {
+  position: sticky;
+  top: 200px;
+  bottom: 200px;
+  z-index: 1;
+}
+.back-up i {
+  font-size: 16px;
+  margin-right: 6px;
+  font-weight: 550;
+}
+.back-up button {
+  display: block;
+  float: right;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+}
+.back-up button:hover {
+  background-color: #1a5888;
+  color: white;
+}
+
+.main-container {
+  height: 2200px;
+}
+
+/* CONTAIN CARD OF PRODUCTS */
+
+.main-container-1 {
+  position: relative;
+  top: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+/* CARD-1 */
+
+.card-container-1 {
+  width: 302px;
+  height: 554px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0.2px 0.2px 5px rgb(215, 170, 170);
+}
+
+/* HEAD OF CARD-1 */
+
+.card-1-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+}
+.card-1-head h1 {
+  font-weight: 460;
+  font-size: 29px;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-1-head p {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  color: black;
+}
+
+/* FOOT OF CARD-1 */
+
+.card-1-foot {
+  padding: 16px 0px 0px;
+}
+.card-1-foot button {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 137.5px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 8px 24px 8px 0px;
+  border: none;
+}
+.card-1-foot p {
+  text-decoration: none;
+  color: #0067b8;
+  font-size: 15px;
+  padding: 8px 27px 8px 0px;
+  font-weight: 600;
+  transition: all 1s linear;
+}
+.card-1-foot p:hover {
+  text-decoration: underline #0067b8;
+  cursor: pointer;
+  transition: 0.3s all linear;
+  i {
+    padding: 5px;
+  }
+}
+
+/* BUTTON FOR CARD-1 */
+
+.card-1-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* CARD-2 */
+
+.card-container-2 {
+  width: 302px;
+  height: 554px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0.2px 0.2px 4px rgb(215, 170, 170);
+}
+
+/* HEAD OF CARD-2 */
+
+.card-2-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-weight: 460;
+}
+.card-2-head h1 {
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-2-head p {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  color: black;
+}
+
+/* FOOT OF CARD-2 */
+
+.card-2-foot {
+  padding: 16px 0px 0px;
+}
+
+/* BUTTON FOR CARD-1 */
+
+.card-2-foot button {
+  position: relative;
+  top: 70px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 95px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 24px 8px 0px;
+  border: none;
+}
+.card-2-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* CARD-3 */
+
+.card-container-3 {
+  width: 302px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  height: 554px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* HEAD FOR CARD-3 */
+
+.card-3-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-weight: 460;
+}
+.card-3-head h1 {
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-3-head p {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  color: black;
+}
+
+/* FOOT FOR CARD-3 */
+
+.card-3-foot {
+  padding: 16px 0px 0px;
+}
+.card-3-foot button {
+  position: relative;
+  top: 150px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 172.5px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 24px 8px 0px;
+  border: none;
+}
+.card-3-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* CARD-4 */
+
+.card-container-4 {
+  width: 302px;
+  height: 554px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* CAPTIONIN GREEN BUTTON */
+
+.card4-caption {
+  position: absolute;
+  top: 238px;
+  background-color: #ffb900;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+/* HEAD FOR CARD-4 */
+
+.card-4-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+}
+.card-4-head h1 {
+  font-size: 29px;
+  color: black;
+  margin: 0px 0px 16px;
+  font-weight: 460;
+}
+.card-4-head p {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  color: black;
+  line-height: 23px;
+}
+
+/*  FOOT FOR CARD-4*/
+
+.card-4-foot {
+  padding: 16px 0px 0px;
+}
+
+/* BUTTON FOR CARD-4 */
+
+.card-4-foot button {
+  position: relative;
+  top: 57px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #0067b8;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 161.5px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 24px 8px 0px;
+  border: none;
+}
+.card-4-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* 2nd main-container */
+
+.main-container-2 {
+  display: block;
+  text-decoration: none;
+}
+.img-container {
+  position: relative;
+  color: black;
+  top: 235px;
+  margin: auto;
+  display: block;
+  width: 1296px;
+  height: 487px;
+  background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP5-1596x600");
+  background-size: cover;
+}
+.img-cap-container {
+  padding: 40px;
+  display: block;
+  width: 388px;
+  height: 429px;
+  position: relative;
+  top: 35px;
+  left: 70px;
+}
+.img-cap-content {
+  width: 292px;
+  height: 333px;
+  text-align: left;
+}
+.img-cap-content h1 {
+  font-size: 37px;
+  margin: 0px 0px 20px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 500;
+}
+.img-cap-content p {
+  font-size: 16px;
+  margin: -5px 0px 25px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+.img-cap-content button {
+  position: relative;
+  top: -10px;
+  font-size: 16px;
+  margin: 8px 0px;
+  font-weight: 500;
+  padding: 10px 12px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.img-cap-content button:hover {
+  background-color: #1a5888;
+}
+
+/* 3RD MAIN CONTAINER */
+
+.main-container-3 {
+  padding-top: 20px;
+}
+.for {
+  letter-spacing: 1.3px;
+  font-size: 37px;
+  position: relative;
+  top: 310px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 450;
+  padding-left: 70px;
+}
+.main-card-container {
+  position: relative;
+  top: 270px;
+  width: 100%;
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* CARD-5 */
+
+.container-for-card5 {
+  padding: 0px 10px;
+}
+.card-container-5 {
+  width: 306px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  height: 484px;
+}
+
+/* HEAD FOR CARD-5 */
+
+.card-5-head {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 460;
+  height: 223px;
+}
+.card-5-head h1 {
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-5-head p {
+  color: black;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* FOOT FOR CARD-5 */
+
+.card-5-foot {
+  padding: 16px 24px;
+}
+.card-5-foot button {
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  cursor: pointer;
+  width: 100.5px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 0px;
+  border: none;
+}
+.card-5-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* CARD 6 */
+
+.container-for-card6 {
+  padding: 0px 10px;
+}
+.card-container-6 {
+  width: 306px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  height: 484px;
+}
+
+/* HEAD FOR CARD-6 */
+
+.card-6-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-weight: 460;
+}
+.card-6-head h1 {
+  color: black;
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+}
+.card-6-head p {
+  font-size: 16px;
+  color: black;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/* FOOT FOR CARD-6 */
+
+.card-6-foot {
+  padding: 16px 0px 0px;
+}
+.card-6-foot button {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 60px;
+  width: 220px;
+  text-align-last: left;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 0px;
+  border: none;
+  position: relative;
+  top: -10px;
+}
+.card-6-foot button:hover {
+  background-color: #1a5888;
+}
+/* CARD 7 */
+
+.container-for-card7 {
+  padding: 0px 10px;
+}
+.card-container-7 {
+  width: 306px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  height: 484px;
+}
+
+/* HEAD FOR CARD-7 */
+
+.card-7-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-weight: 460;
+}
+.card-7-head h1 {
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-7-head p {
+  color: black;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/* FOOT FOR CARD-7 */
+
+.card-7-foot {
+  padding: 16px 0px 0px;
+}
+.card-7-foot button {
+  cursor: pointer;
+  position: relative;
+  top: 150px;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 110px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 24px 8px 0px;
+  border: none;
+  position: relative;
+  top: 20px;
+}
+.card-7-foot button:hover {
+  background-color: #1a5888;
+}
+/* CARD 8 */
+
+.container-for-card8 {
+  padding: 0px 10px;
+}
+.card-container-8 {
+  width: 306px;
+  box-shadow: 0.2px 0.5px 4px rgb(215, 170, 170);
+  height: 484px;
+}
+
+/* HEAD FOR CARD-8 */
+
+.card-8-head {
+  margin-top: 0px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-weight: 460;
+}
+.card-8-head h1 {
+  font-size: 29px;
+  font-weight: 460;
+  margin: 0px 0px 16px;
+  color: black;
+}
+.card-8-head p {
+  color: black;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+/* FOOT FOR CARD-8 */
+
+.card-8-foot {
+  padding: 16px 0px 0px;
+}
+.card-8-foot button {
+  position: relative;
+  top: 150px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background-color: #0067b8;
+  padding: 10px 12px;
+  font-weight: 500;
+  height: 40px;
+  width: 110px;
+  color: white;
+  border-radius: 3px;
+  margin: 8px 24px 8px 0px;
+  border: none;
+  position: relative;
+  top: 20px;
+}
+.card-8-foot button:hover {
+  background-color: #1a5888;
+}
+
+/* FOOTERS */
+footer {
+  position: relative;
+}
+/* foot icons */
+.foot-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 450px;
+  /* position: relative;
+    top: 350px;
+    left: 40px; */
+}
+.foot-p {
+  color: black;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 24px;
+  margin-left: 40px;
+}
+.foot-icon {
+  color: black;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 24px;
+}
+
+/* FOOT CONTAINERS */
+.foot-container {
+  /* position: relative;
+    top: 400px; */
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 330px;
+  padding: 20px 50px;
+  background-color: #f4d2d2;
+  margin-top: 50px;
+}
+
+.foot-container li {
+  line-height: 32px;
+  color: #616161;
+  opacity: 0.4;
+  list-style: none;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+.foot-container li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.foot-container p {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #616161;
+  font-size: 16px;
+  list-style: none;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.main-footer {
+  padding: 20px;
+  background-color: #000000b6;
+  /* position: relative;
+    top: 400px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 5px inset rgb(182, 201, 211);
+}
+
+.main-footer-1 {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-evenly;
+}
+.main-footer-1 p {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+.main-footer-1 p:hover {
+  opacity: 1;
+}
+.main-footer-2 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 600px;
+
+  li {
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 12px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+.main-footer-2 li:hover {
+  opacity: 1;
+}
